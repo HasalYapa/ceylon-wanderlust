@@ -1,0 +1,298 @@
+<html><head>
+    <meta charset="utf-8"/>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+    <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Playfair+Display:wght@400;700&amp;family=Roboto:wght@400;500;700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+    <title>Ceylon Wanderlust</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+          :root {
+            --ocean-blue: #0077b6;
+            --golden-sand: #fca311;
+            --lush-green: #2d6a4f;
+            --sunset-orange: #e76f51;
+            --neutral-white: #ffffff;
+            --neutral-light: #f8f9fa;
+            --neutral-dark: #343a40;
+          }
+          body {
+            font-family: "Roboto", sans-serif;
+          }
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            font-family: "Playfair Display", serif;
+          }
+        </style>
+    </head>
+    <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[var(--neutral-light)] group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+    <div class="container mx-auto flex items-center justify-between whitespace-nowrap px-10 py-4">
+    <div class="flex items-center gap-3 text-[var(--ocean-blue)]">
+    <div class="size-8">
+    <img src="logo.png" alt="Ceylon Wanderlust Logo" class="w-full h-full object-contain">
+    </div>
+    <h2 class="text-2xl font-bold tracking-tight">Ceylon Wanderlust</h2>
+    </div>
+    <nav class="hidden md:flex items-center gap-8">
+    <a class="text-sm font-medium hover:text-[var(--ocean-blue)] transition-colors" href="#">Destinations</a>
+    <a class="text-sm font-medium hover:text-[var(--ocean-blue)] transition-colors" href="#">Tours</a>
+    <a class="text-sm font-medium hover:text-[var(--ocean-blue)] transition-colors" href="#">Experiences</a>
+    <a class="text-sm font-medium hover:text-[var(--ocean-blue)] transition-colors" href="#">About Us</a>
+    <a class="text-sm font-medium hover:text-[var(--ocean-blue)] transition-colors" href="#">Contact</a>
+    </nav>
+    <button class="hidden md:flex min-w-[100px] items-center justify-center rounded-full h-10 px-6 bg-[var(--golden-sand)] text-white text-sm font-bold tracking-wide hover:bg-[var(--sunset-orange)] transition-all duration-300 shadow-md hover:shadow-lg">
+              Book Now
+            </button>
+    </div>
+    </header>
+    <main class="flex flex-1 justify-center bg-[var(--background)] py-10">
+    <div class="layout-content-container flex flex-col max-w-6xl flex-1 px-4">
+    <div class="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-lg">
+    <div class="absolute inset-0 bg-cover bg-center" style='background-image: url("index.png");'></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+    <div class="absolute bottom-0 left-0 p-10">
+    <h1 class="text-white text-5xl font-bold leading-tight tracking-tight">Sigiriya: The Ancient Rock Fortress</h1>
+    </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-10">
+    <div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 bg-white shadow-sm">
+    <p class="text-gray-600 text-base font-medium leading-normal">Elevation</p>
+    <p class="text-[var(--neutral-dark)] tracking-tight text-3xl font-bold leading-tight">370 m</p>
+    </div>
+    <div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 bg-white shadow-sm">
+    <p class="text-gray-600 text-base font-medium leading-normal">Population</p>
+    <p class="text-[var(--neutral-dark)] tracking-tight text-3xl font-bold leading-tight">5,000</p>
+    </div>
+    <div class="flex flex-col gap-2 rounded-xl p-6 border border-gray-200 bg-white shadow-sm">
+    <p class="text-gray-600 text-base font-medium leading-normal">Distance from Colombo</p>
+    <p class="text-[var(--neutral-dark)] tracking-tight text-3xl font-bold leading-tight">169 km</p>
+    </div>
+    </div>
+    <div class="sticky top-0 bg-[var(--neutral-light)] z-10 py-4 mb-8 border-b border-gray-200">
+    <div class="flex gap-8">
+    <a class="flex flex-col items-center justify-center border-b-2 border-b-[var(--ocean-blue)] text-[var(--ocean-blue)] pb-3 pt-2" href="#">
+    <p class="text-base font-bold leading-normal">Overview</p>
+    </a>
+    <a class="flex flex-col items-center justify-center border-b-2 border-b-transparent text-gray-600 hover:text-[var(--ocean-blue)] hover:border-b-[var(--ocean-blue)] pb-3 pt-2 transition-colors" href="#">
+    <p class="text-base font-bold leading-normal">Things to Do</p>
+    </a>
+    <a class="flex flex-col items-center justify-center border-b-2 border-b-transparent text-gray-600 hover:text-[var(--ocean-blue)] hover:border-b-[var(--ocean-blue)] pb-3 pt-2 transition-colors" href="#">
+    <p class="text-base font-bold leading-normal">Where to Stay</p>
+    </a>
+    <a class="flex flex-col items-center justify-center border-b-2 border-b-transparent text-gray-600 hover:text-[var(--ocean-blue)] hover:border-b-[var(--ocean-blue)] pb-3 pt-2 transition-colors" href="#">
+    <p class="text-base font-bold leading-normal">Getting There</p>
+    </a>
+    <a class="flex flex-col items-center justify-center border-b-2 border-b-transparent text-gray-600 hover:text-[var(--ocean-blue)] hover:border-b-[var(--ocean-blue)] pb-3 pt-2 transition-colors" href="#">
+    <p class="text-base font-bold leading-normal">Local Tips</p>
+    </a>
+    <a class="flex flex-col items-center justify-center border-b-2 border-b-transparent text-gray-600 hover:text-[var(--ocean-blue)] hover:border-b-[var(--ocean-blue)] pb-3 pt-2 transition-colors" href="#">
+    <p class="text-base font-bold leading-normal">Gallery</p>
+    </a>
+    </div>
+    </div>
+    <div class="space-y-12">
+    <section id="overview">
+    <h2 class="text-[var(--neutral-dark)] text-3xl font-bold leading-tight tracking-tight mb-4">Overview</h2>
+    <p class="text-gray-600 text-lg font-normal leading-relaxed mb-6">
+                      Sigiriya, a UNESCO World Heritage site, is home to the magnificent Lion Rock fortress that rises dramatically from the central plains of Sri Lanka. Built in the 5th century by King Kasyapa, this ancient palace complex showcases remarkable engineering and artistic achievements. The site features stunning frescoes, the iconic lion's paws entrance, and breathtaking panoramic views from the summit. This archaeological wonder combines history, culture, and natural beauty in one extraordinary destination.
+                    </p>
+    <div class="w-full h-96 bg-center bg-no-repeat bg-cover rounded-xl shadow-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBJSLrYqv3xAgIRAOc5I5jhUsJYtTyWiPKXMA8hUquMHz_MYSsYSbuQXM1FtTB8l0Mcxbq6tQQRJHDX8DQc_1glJwq4WVHdLSEJpT094UNnYrwIq7zlxfAYwRjjAiD0HRzm570sf9FXcXyvu2OB1iMF6S-YSaE2gE5PnnmEgF27y-xyMUEHGKtsYHHLV0dZWN-zj53bFkc03DL1Yh3vYaLPuNpHKVyr-6w2MDGO2bxayGbFCDxLDYhTKhACJc0Z-zmMDI3IeKL42Q");'></div>
+    <h3 class="text-[var(--neutral-dark)] text-2xl font-bold leading-tight tracking-tight mt-10 mb-6">Famous For</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+    <div class="flex flex-col items-center gap-3 rounded-lg border border-gray-200 bg-white p-6 text-center shadow-sm hover:shadow-lg transition-shadow">
+    <div class="text-[var(--ocean-blue)]" data-icon="Mountains" data-size="32px" data-weight="regular">
+    <svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px" xmlns="http://www.w3.org/2000/svg">
+    <path d="M164,80a28,28,0,1,0-28-28A28,28,0,0,0,164,80Zm0-40a12,12,0,1,1-12,12A12,12,0,0,1,164,40Zm90.88,155.92-54.56-92.08A15.87,15.87,0,0,0,186.55,96h0a15.85,15.85,0,0,0-13.76,7.84L146.63,148l-44.84-76.1a16,16,0,0,0-27.58,0L1.11,195.94A8,8,0,0,0,8,208H248a8,8,0,0,0,6.88-12.08ZM88,80l23.57,40H64.43ZM22,192l33-56h66l18.74,31.8,0,0L154,192Zm150.57,0-16.66-28.28L186.55,112,234,192Z"></path>
+    </svg>
+    </div>
+    <h4 class="text-[var(--neutral-dark)] text-lg font-bold leading-tight">Ancient Fortress</h4>
+    </div>
+    <div class="flex flex-col items-center gap-3 rounded-lg border border-gray-200 bg-white p-6 text-center shadow-sm hover:shadow-lg transition-shadow">
+    <div class="text-[var(--ocean-blue)]" data-icon="TreePalm" data-size="32px" data-weight="regular">
+    <svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px" xmlns="http://www.w3.org/2000/svg">
+    <path d="M237.79,53.23a66.86,66.86,0,0,0-97.74,0,72.21,72.21,0,0,0-12.05,17,72.21,72.21,0,0,0-12-17,66.86,66.86,0,0,0-97.74,0,8,8,0,0,0,2.6,12.85L77,90.55a71.42,71.42,0,0,0-43.36,33.21,70.64,70.64,0,0,0-7.2,54.32A8,8,0,0,0,39,182.36l81-61.68V224a8,8,0,0,0,16,0V120.68l81,61.68a8,8,0,0,0,12.57-4.28,70.64,70.64,0,0,0-7.2-54.32A71.42,71.42,0,0,0,179,90.55l56.22-24.47a8,8,0,0,0,2.6-12.85ZM67.08,48a51.13,51.13,0,0,1,37.28,16.26,56.53,56.53,0,0,1,14.26,26.93L39,56.53A50.5,50.5,0,0,1,67.08,48ZM40,161.5a54.82,54.82,0,0,1,7.47-29.7,55.55,55.55,0,0,1,34-25.89A56.52,56.52,0,0,1,96.1,104a55.82,55.82,0,0,1,16.23,2.41ZM208.5,131.8A54.82,54.82,0,0,1,216,161.5l-72.3-55.1a56.3,56.3,0,0,1,64.83,25.4ZM137.38,91.19a56.53,56.53,0,0,1,14.26-26.93A51.13,51.13,0,0,1,188.92,48,50.5,50.5,0,0,1,217,56.53Z"></path>
+    </svg>
+    </div>
+    <h4 class="text-[var(--neutral-dark)] text-lg font-bold leading-tight">Frescoes</h4>
+    </div>
+    <div class="flex flex-col items-center gap-3 rounded-lg border border-gray-200 bg-white p-6 text-center shadow-sm hover:shadow-lg transition-shadow">
+    <div class="text-[var(--ocean-blue)]" data-icon="Train" data-size="32px" data-weight="regular">
+    <svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px" xmlns="http://www.w3.org/2000/svg">
+    <path d="M184,24H72A32,32,0,0,0,40,56V184a32,32,0,0,0,32,32h8L65.6,235.2a8,8,0,1,0,12.8,9.6L100,216h56l21.6,28.8a8,8,0,1,0,12.8-9.6L176,216h8a32,32,0,0,0,32-32V56A32,32,0,0,0,184,24ZM56,120V80h64v40Zm80-40h64v40H136ZM72,40H184a16,16,0,0,1,16,16v8H56V56A16,16,0,0,1,72,40ZM184,200H72a16,16,0,0,1-16-16V136H200v48A16,16,0,0,1,184,200ZM96,172a12,12,0,1,1-12-12A12,12,0,0,1,96,172Zm88,0a12,12,0,1,1-12-12A12,12,0,0,1,184,172Z"></path>
+    </svg>
+    </div>
+    <h4 class="text-[var(--neutral-dark)] text-lg font-bold leading-tight">Lion's Paws</h4>
+    </div>
+    <div class="flex flex-col items-center gap-3 rounded-lg border border-gray-200 bg-white p-6 text-center shadow-sm hover:shadow-lg transition-shadow">
+    <div class="text-[var(--ocean-blue)]" data-icon="Bridge" data-size="32px" data-weight="regular">
+    <svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px" xmlns="http://www.w3.org/2000/svg">
+    <path d="M232,160H200V101.34a71.89,71.89,0,0,0,29,21.42,8,8,0,0,0,6-14.83A55.78,55.78,0,0,1,200,56a8,8,0,0,0-16,0A56,56,0,0,1,72,56a8,8,0,0,0-16,0,55.78,55.78,0,0,1-35,51.93,8,8,0,0,0,6,14.83,71.89,71.89,0,0,0,29-21.42V160H24a8,8,0,0,0,0,16H56v24a8,8,0,0,0,16,0V176H184v24a8,8,0,0,0,16,0V176h32a8,8,0,0,0,0-16Zm-88-33.8V160H112V126.2a72,72,0,0,0,32,0Zm-72-25a72.47,72.47,0,0,0,24,19.27V160H72ZM160,160V120.48a72.47,72.47,0,0,0,24-19.27V160Z"></path>
+    </svg>
+    </div>
+    <h4 class="text-[var(--neutral-dark)] text-lg font-bold leading-tight">Water Gardens</h4>
+    </div>
+    </div>
+    </section>
+    <section id="things-to-do">
+    <h2 class="text-[var(--neutral-dark)] text-3xl font-bold leading-tight tracking-tight mb-4">Things to Do</h2>
+    <div class="flex gap-4 mb-8">
+    <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[var(--ocean-blue)] px-4 text-white font-medium">
+                        Adventure
+                      </button>
+    <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-gray-100 px-4 text-gray-600 font-medium hover:bg-gray-200">
+                        Culture
+                      </button>
+    <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-gray-100 px-4 text-gray-600 font-medium hover:bg-gray-200">
+                        Nature
+                      </button>
+    <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-gray-100 px-4 text-gray-600 font-medium hover:bg-gray-200">
+                        Relaxation
+                      </button>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="flex h-full flex-col gap-4 rounded-xl bg-white shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform">
+    <div class="w-full h-48 bg-center bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAKgA6oYAB8mna6W1usptEXrW02QQPS7oFfl4Ph3afntU96VWvT3zJhrNaD71AOWaXZ473fHD_yWLPe3zFAlgZund9JZTg2s9d-dRgsgypSlJX0iZHwFYTLYHz7i7vqeRrQKJkF2tvJPATL2gjqvMmOnDK_wzqyO7HZpsmtKBMRLDAlYYZHByn4HSk6pgFZxEc65hzTukChQzKZEr0N5vkbMmnuJhf5w8L08bK46s_C3TKSHN_Xji1v-NKSGRtb0UEBuI5BKJLKcw");'></div>
+    <div class="flex flex-col flex-1 justify-between p-5">
+    <div>
+    <p class="text-[var(--neutral-dark)] text-lg font-bold leading-normal">Climb Sigiriya Rock</p>
+    <p class="text-gray-600 text-base font-normal leading-normal mt-1">Ascend the ancient fortress for panoramic views</p>
+    </div>
+    <button class="flex mt-4 w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-11 px-4 bg-[var(--primary-color)] text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-blue-600 transition-colors">
+    <span class="truncate">Book Experience</span>
+    </button>
+    </div>
+    </div>
+    <div class="flex h-full flex-col gap-4 rounded-xl bg-white shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform">
+    <div class="w-full h-48 bg-center bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuClXpRYkmZaJnnxpY2gUdSXluCtWZebGJxiTLzGNsyfIOIzPs2offKTK-fJTOm6P6aqnRu1gqJWbtFJGHdGZmgZpf9IvhcjuGfLSkl4gWOcgovMV8gdP-olZHcez54CH6zAvtI0hkNPcBja8FRQEX2X_QX2ZF7HjDPlUQy-IJ3OlNwszteLdDQ2HYtewT2zzDHGwadUBAO22Qno6XEldW0E4WkLNp8xHoD_OqTRe-1yfKtb3b_Yiy6ea3rVSbhkXXiTKz48Uxt5VA");'></div>
+    <div class="flex flex-col flex-1 justify-between p-5">
+    <div>
+    <p class="text-[var(--neutral-dark)] text-lg font-bold leading-normal">Explore Ancient Frescoes</p>
+    <p class="text-gray-600 text-base font-normal leading-normal mt-1">Marvel at the beautiful Sigiriya maidens paintings</p>
+    </div>
+    <button class="flex mt-4 w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-11 px-4 bg-[var(--primary-color)] text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-blue-600 transition-colors">
+    <span class="truncate">Book Experience</span>
+    </button>
+    </div>
+    </div>
+    <div class="flex h-full flex-col gap-4 rounded-xl bg-white shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform">
+    <div class="w-full h-48 bg-center bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAtFP5-lXTjN3nKUjC1YVDYNxbsrk3TLcF2L-6b9_YAY6To4pSp7awJHQuzS7fIaH1eqZ1DJzXrh9xpBG_ULUk022Cnt_ZdrGhRpPAQgBbIRJyxtgsatGaVqixuqAjyeKMLwLbvyCGRdA87MbMYvtcKFgrKmAKN5gg0NFer1FjSOV2NPBi9yz5sQm5nW-StqArrpwsXIZZGktdVykEGLTYAh-fpPrqa1QivAtZJ1xvK4qRCH2IEu4onjVdggtVtPDue_nR043lPCA");'></div>
+    <div class="flex flex-col flex-1 justify-between p-5">
+    <div>
+    <p class="text-[var(--text-primary)] text-lg font-bold leading-normal">Visit Lion's Paws</p>
+    <p class="text-[var(--text-secondary)] text-base font-normal leading-normal mt-1">See the iconic entrance to the ancient palace</p>
+    </div>
+    <button class="flex mt-4 w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-11 px-4 bg-[var(--primary-color)] text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-blue-600 transition-colors">
+    <span class="truncate">Book Experience</span>
+    </button>
+    </div>
+    </div>
+    <div class="flex h-full flex-col gap-4 rounded-xl bg-white shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform">
+    <div class="w-full h-48 bg-center bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDUP0gGPJm3lg4NTrqDy5wocbjjpQl-6B7wK-oaKgNWaZeAKXjd_601vDQxQz1Ef30IhUVptPzCfacU6UpFyfJr8Vw8p0rQxQ8GuZJYmiAIUwdDM6jKWR92rm4fn4FGxXHHVqKjN0M8F5sHJnAMml49i-ZYkoGwILSxQ3u4GyG-eWAuWDjpdBQVr7cH-8PpUjlUaunkoBTnCD5H2YckXCgshOdgTG33YWyyrRjyt89ZK-x71n7sK1DRxabkrmjO-TRkqzl0cuviEA");'></div>
+    <div class="flex flex-col flex-1 justify-between p-5">
+    <div>
+    <p class="text-[var(--text-primary)] text-lg font-bold leading-normal">Explore Water Gardens</p>
+    <p class="text-[var(--text-secondary)] text-base font-normal leading-normal mt-1">Discover the ancient hydraulic engineering marvel</p>
+    </div>
+    <button class="flex mt-4 w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-11 px-4 bg-[var(--primary-color)] text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-blue-600 transition-colors">
+    <span class="truncate">Book Experience</span>
+    </button>
+    </div>
+    </div>
+    </div>
+    </section>
+    <section id="where-to-stay">
+    <h2 class="text-[var(--neutral-dark)] text-3xl font-bold leading-tight tracking-tight mb-8">Where to Stay</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="group relative rounded-xl overflow-hidden shadow-lg">
+    <div class="w-full h-80 bg-center bg-cover transition-transform duration-300 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDkqhSo0fCaakFr-Mg1CZ0UnSM7hwa43dLpZUenKZ00onEn__3eim3Q1c0F5uZFgiUujYO_K4mePZWf4ueIYPrMY968aQzURWENj5WL6yveGzo5rd-pjLKCycXHv4e0XLOei6PXNQ83P0bkWAWI4hMwYQ555cHE_BJjWKAkqsgux7VDK-ROixDnqCtiuHWd4ugrrACUDGVW0jIy0tPhYUr57pRNYbWvG-LQT3jRgtvgs-skeLm0xavxMu3YlX2UnJ6mP-ERaSza0Q");'></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+    <div class="absolute bottom-0 left-0 p-5">
+    <p class="text-white text-xl font-bold leading-normal">Luxury Hotel</p>
+    <p class="text-gray-200 text-base font-normal leading-normal">Indulge in comfort and elegance</p>
+    </div>
+    </div>
+    <div class="group relative rounded-xl overflow-hidden shadow-lg">
+    <div class="w-full h-80 bg-center bg-cover transition-transform duration-300 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVoTyZi1OCC9pGLjEBF2NztQnvtmXPInJcOrLhBrmVenJz6I2ysIYM4sBYctgOGQ0Kxx_XkiR9tbViPgyDNAHKsypG1mW87oPu8DyvmyWmczXzed9AYsIsIHLcyXh_wQ1KGfha67Ve51ldQH0b6DQd7-3AfszFvGahB4Ot09RZkyu_zOzF2Y5dctB_47jshpmj5_pb_gEWAI600OLY75HDhLsGXTYWltG8htIvm2Gqr1CMqNv41hZSD31EKe2S_JmvM8wn57bCVA");'></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+    <div class="absolute bottom-0 left-0 p-5">
+    <p class="text-white text-xl font-bold leading-normal">Cozy Guesthouse</p>
+    <p class="text-gray-200 text-base font-normal leading-normal">Experience local hospitality</p>
+    </div>
+    </div>
+    <div class="group relative rounded-xl overflow-hidden shadow-lg">
+    <div class="w-full h-80 bg-center bg-cover transition-transform duration-300 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBcyvWAAMEyTd9kfIk5jFaiy1Vu2cZ2xGmCGtMl1Iz-Sj1Gz6Kw9plKY4vJmvAgCzhbafQQZZXMUctAJIm62UemBXofAa0O14eZIMZUWkcmxW-E-LWPkiNSnOxivzFhX9KVd0_Hx3aCRNNyBv8QrBwcZMqgXkAnIB8e4gB8Rait4laB1vxK21UAg3ndTjqlH2mvvca7icdWp-VLtPGc-cZ1pW1D1zbv-2vLyRLsyl1TmkxsXMSoUUi9lXEs8XM-KdnBPVA9u1qV9Q");'></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+    <div class="absolute bottom-0 left-0 p-5">
+    <p class="text-white text-xl font-bold leading-normal">Private Villa</p>
+    <p class="text-gray-200 text-base font-normal leading-normal">Enjoy privacy and tranquility</p>
+    </div>
+    </div>
+    <div class="group relative rounded-xl overflow-hidden shadow-lg">
+    <div class="w-full h-80 bg-center bg-cover transition-transform duration-300 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDQM_Ea6FyMMsPBltKxeLMOzM_ogwrqKaE9Dx57YYzxuCIJyBL8C_VnX4IU00ehxOwf00Rok5DPdnqJA8ZRQusnM0a6oY6cUGCHOTVD_31srgWqTYZTZXkM1tHIC8c4-sJ4MxsiDs5yK38oQc3fgbOIsmiRpXBJSmzZr5RdeqQgt6H0dlBCr59QfceAZcUjI1hUQCmhePIArRfx7fwUY3PmiIyvUhdylEF6wL_IrpiJisWs2b3Yc1DowvKEKKvYAYhDXJ8L2jw-wQ");'></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+    <div class="absolute bottom-0 left-0 p-5">
+    <p class="text-white text-xl font-bold leading-normal">Eco-Resort</p>
+    <p class="text-gray-200 text-base font-normal leading-normal">Stay amidst nature's embrace</p>
+    </div>
+    </div>
+    </div>
+    </section>
+    <section id="gallery">
+    <h2 class="text-[var(--neutral-dark)] text-3xl font-bold leading-tight tracking-tight mb-8">Gallery</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+    <div class="overflow-hidden rounded-xl shadow-lg"><img alt="" class="w-full h-64 object-cover" src="gallery1.png"/></div>
+    <div class="overflow-hidden rounded-xl shadow-lg col-span-1 md:col-span-2"><img alt="" class="w-full h-64 object-cover" src="gallery2.png"/></div>
+    <div class="overflow-hidden rounded-xl shadow-lg col-span-1 md:col-span-2"><img alt="" class="w-full h-64 object-cover" src="gallery3.png"/></div>
+    <div class="overflow-hidden rounded-xl shadow-lg"><img alt="" class="w-full h-64 object-cover" src="gallery4.png"/></div>
+    </div>
+    </section>
+    </div>
+    </div>
+    </main>
+    <footer class="bg-[var(--neutral-dark)] text-white">
+    <div class="container mx-auto px-10 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div>
+    <h3 class="text-xl font-bold mb-4">Ceylon Wanderlust</h3>
+    <p class="text-gray-400 text-sm">Crafting authentic Sri Lankan journeys since 2024.</p>
+    </div>
+    <div>
+    <h4 class="font-semibold mb-4">Quick Links</h4>
+    <ul class="space-y-2 text-sm">
+    <li><a class="text-gray-400 hover:text-white" href="#">Destinations</a></li>
+    <li><a class="text-gray-400 hover:text-white" href="#">Tours</a></li>
+    <li><a class="text-gray-400 hover:text-white" href="#">About Us</a></li>
+    <li><a class="text-gray-400 hover:text-white" href="#">Contact</a></li>
+    </ul>
+    </div>
+    <div>
+    <h4 class="font-semibold mb-4">Legal</h4>
+    <ul class="space-y-2 text-sm">
+    <li><a class="text-gray-400 hover:text-white" href="#">Privacy Policy</a></li>
+    <li><a class="text-gray-400 hover:text-white" href="#">Terms of Service</a></li>
+    </ul>
+    </div>
+    <div>
+    <h4 class="font-semibold mb-4">Connect With Us</h4>
+    <div class="flex space-x-4">
+    <a class="text-gray-400 hover:text-white" href="#"><svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a>
+    <a class="text-gray-400 hover:text-white" href="#"><svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+    <a class="text-gray-400 hover:text-white" href="#"><svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 4s-.7 2.1-2 3.4c1.6 1.4 2.8 3.2 3 5.2-2.7-1.7-5.5-2.2-7.8-2-2.4-.2-4.4.6-6.4,2C2.7 15.5.5 17.7 0 20c3.2-1.7 5.8-3.2 8.1-4.3-2 .5-4.2 1.3-6.1 2.3 1.1-2.2 2.3-4 3.9-5.2s3.3-2.1 5-2.5c4.6-.9 8.8 2.6 11.1 6.1.2-1 .2-2.2 0-3.2-1.2-4.3-4-8.3-9-9.8 2.1.3 4 .9 5.6 2.1.2-2-1-3.6-2.6-5.1-1-1.3-2.6-2.3-4.2-3-1.8.3-3.4 1.3-4.6 2.9-1.3 1.6-2 3.5-2.2 5.5.7.1 1.4.2 2.1.4 5.9 1.1 10.4 4.5 13.1 9.5.3-1.1.3-2.3 0-3.4Z"></path></svg></a>
+    </div>
+    </div>
+    </div>
+    <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+    <p>© 2024 Ceylon Wanderlust. All rights reserved.</p>
+    </div>
+    </div>
+    </footer>
+    </div>
+    </div>
+    
+    </body></html>
